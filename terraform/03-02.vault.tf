@@ -50,10 +50,11 @@ resource "vault_database_secret_backend_role" "test2" {
 #   ]
   creation_statements = [
     "CREATE USER \"{{name}}\" WITH PASSWORD = '{{password}}';",
-    "CREATE USER \"vault\" WITH PASSWORD = 'ABC123_changeme';",
+    # "CREATE USER \"vault\" WITH PASSWORD = 'ABC123_changeme';",
   ]
   revocation_statements = [
-    "DROP USER IF EXISTS [{{name}}];"
+    "DROP USER IF EXISTS [{{name}}];",
+    # "DROP USER IF EXISTS \"vault\";",
   ]
 }
 
