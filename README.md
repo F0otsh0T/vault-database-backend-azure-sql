@@ -51,16 +51,16 @@ Get Database Credentials:
     username           v-token-hcp-root-test-z6c...-174...
     ```
 - `mssql/creds/test2` (./terraform/03-02.vault.tf)
-```shell
-❯ vault read mssql/creds/test2
-Key                Value
----                -----
-lease_id           mssql/creds/test2/Hiu9ubCselJU5r0Ko2g0WyJL.Rbvq6
-lease_duration     1h
-lease_renewable    true
-password           ena...Q7E0
-username           v-token-hcp-root-test2-1Oq...-174...
-```
+    ```shell
+    ❯ vault read mssql/creds/test2
+    Key                Value
+    ---                -----
+    lease_id           mssql/creds/test2/Hiu9ubCselJU5r0Ko2g0WyJL.Rbvq6
+    lease_duration     1h
+    lease_renewable    true
+    password           ena...Q7E0
+    username           v-token-hcp-root-test2-1Oq...-174...
+    ```
 
 
 
